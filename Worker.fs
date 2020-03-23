@@ -1,4 +1,4 @@
-namespace chickadee.giraffeworker
+namespace fsharpworker
 
 module Workers =
 
