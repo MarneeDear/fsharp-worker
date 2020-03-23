@@ -19,11 +19,4 @@ module Workers =
                     do! Console.Out.WriteLineAsync("HELLO WORLD")
                     do! Task.Delay(1000, stoppingToken)
                     
-            } |> ignore
-
-            // I have to put this WriteLineAsync here or I can't compile due to this error
-            //This expression was expected to have type
-            //            'Task'    
-            //but here has type
-            //            'unit'
-            Console.Out.WriteLineAsync(String.Empty)
+            } :> Task
